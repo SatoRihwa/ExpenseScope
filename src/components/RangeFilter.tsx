@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RANGE_OPTIONS, type RangeKey } from "@/lib/types";
 
-export function RangeFilter({ current }: { current: RangeKey }) {
+export function RangeFilter({ current }: { current: RangeKey | null }) {
   return (
     <div className="segmented" role="group" aria-label="期間フィルター">
       {RANGE_OPTIONS.map((o) => (
