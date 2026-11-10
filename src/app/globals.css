@@ -330,3 +330,38 @@ h2 {
   color: var(--danger);
   margin: 0;
 }
+
+.range-form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.range-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+.range-form input {
+  font: inherit;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.range-sep {
+  padding-bottom: 10px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.note {
+  margin: -8px 0 16px;
+  padding: 6px 12px;
+  background: var(--primary-soft);
+  color: #174ea6;
+  border-radius: 6px;
+  font-size: 15px;
+}

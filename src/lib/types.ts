@@ -27,3 +27,8 @@ export const RANGE_OPTIONS: ReadonlyArray<{ key: RangeKey; label: string }> = [
 export function parseRangeKey(value: string | null | undefined): RangeKey {
   return value === "7d" || value === "30d" || value === "all" ? value : "30d";
 }
+
+/** ダッシュボード・CSV で共通の期間指定。プリセット (7日/30日/全期間) か任意の開始日・終了日。 */
+export type PeriodSelection =
+  | { kind: "preset"; range: RangeKey }
+  | { kind: "custom"; from: DateString; to: DateString };
